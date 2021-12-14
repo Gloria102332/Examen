@@ -17,6 +17,7 @@ class CreateEmpleadosTable extends Migration
 		{
             $table->id();
             $table->string('nombre');
+			$table->string('telefono');
             $table->foreignId('id_departamento')->constrained('departamento')->references('id');
 			$table->foreignId('id_puesto')->constrained('puesto')->references('id');
         });

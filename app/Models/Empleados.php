@@ -14,6 +14,7 @@ class Empleados extends Model
     protected $fillable =
 	[
 		'nombre',
+		'telefono',
 		'id_departamento',
 		'id_puesto'
 	];
